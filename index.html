@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Stylesheet links -->
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/index.css" />
 
     <!-- Script links -->
     <script src="scripts/constants/mentalTasks.js"></script>
@@ -20,59 +20,61 @@
     <script src="scripts/currency.js"></script>
 
     <title>Avatar</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- background image -->
-    <img src="images/">
+    <img src="images/" />
 
     <!-- div for currency and daily -->
     <div id="topUI">
-        <!-- box for currency -->
-        <div id="currencyBox">
-
-        </div>
-        <!-- box for dailies -->
-        <div id="dailyBox">
-
-        </div>
+      <!-- box for currency -->
+      <div id="currencyBox">
+        <p>Currency:</p>
+      </div>
+      <!-- box for dailies -->
+      <div id="dailyBox">
+        <p>Dailies</p>
+      </div>
     </div>
 
     <!-- avatar image -->
-    <img src="images/Bunny.gif">
+    <div id="avatar">
+      <img src="images/Bunny.gif" />
+    </div>
 
     <!-- bottom navbar -->
     <div id="footer">
-        <!-- clothing options -->
-        <a href="" id="clothingButton">
-            <img src="" id="clothingIcon"> 
-        </a> 
-        <a href="shop.html" id="shopButton">
-            <img src="" id="shopIcon">
-        </a>
-        <a href="history.html" id="historyButton">
-            <img src="" id="historyIcon">
-        </a>
+      <!-- clothing options -->
+      <a href="" id="clothingButton">
+        <img src="" id="clothingIcon" />
+      </a>
+      <a href="shop.html" id="shopButton">
+        <img src="" id="shopIcon" />
+      </a>
+      <a href="history.html" id="historyButton">
+        <img src="" id="historyIcon" />
+      </a>
     </div>
 
     <!-- pop-up for dailies -->
     <dialog id="dailyScreen">
-        <input type="checkbox" id="physicalDaily" name="physicalDaily" disabled>
-        <label for="physicalDaily"></label>
-        <button id="completePhysicalButton">Complete</button><br>
-        <input type="checkbox" id="mentalDaily" name="mentalDaily" disabled>
-        <label for="mentalDaily"></label>
-        <button id="completePhysicalButton">Complete</button><br>
+      <input type="checkbox" id="physicalDaily" name="physicalDaily" disabled />
+      <label for="physicalDaily"></label>
+      <button id="completePhysicalButton">Complete</button><br />
+      <input type="checkbox" id="mentalDaily" name="mentalDaily" disabled />
+      <label for="mentalDaily"></label>
+      <button id="completePhysicalButton">Complete</button><br />
     </dialog>
-    
+
     <!-- image section for clothing, requires manually adjustments in css (remove any thats too much) -->
-    <img id="hat">
-    <img id="scarf">
-    <img id="glasses">
-    <img id="necklaces">
-    <img id="shirts">
-    <img id="pants">
-    <img id="shoes">
-    <img id="gloves">
-    <img id="pet">
-</body>
+    <img id="hat" />
+    <img id="scarf" />
+    <img id="glasses" />
+    <img id="necklaces" />
+    <img id="shirts" />
+    <img id="pants" />
+    <img id="shoes" />
+    <img id="gloves" />
+    <img id="pet" />
+  </body>
 </html>
