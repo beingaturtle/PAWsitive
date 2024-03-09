@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/icons/shopIcon.css" />
     <link rel="stylesheet" href="styles/icons/statsIcon.css" />
     <link rel="stylesheet" href="styles/icons/clothesIcon.css" />
+    <link rel="stylesheet" href="styles/icons/alertIcon.css" />
 
     <!-- Script links -->
     <script src="scripts/constants/mentalTasks.js"></script>
@@ -41,7 +42,7 @@
       </div>
       <!-- box for dailies -->
       <div id="dailyBox">
-        <p><span class="material-symbols-outlined">priority_high</span><span class="material-symbols-outlined">done</span></p>
+        <p><span class="material-symbols-outlined" id="alertIcon">priority_high</span><span class="material-symbols-outlined" id="checkIcon">done</span></p>
       </div>
     </div>
 
@@ -74,7 +75,8 @@
       <button id="completePhysicalButton">Complete</button><br />
       <input type="checkbox" id="mentalDaily" name="mentalDaily" disabled />
       <label for="mentalDaily"></label>
-      <button id="completePhysicalButton">Complete</button><br />
+      <button id="completeMentalButton">Complete</button><br />
+      <button id="closeButton">Close</button>
     </dialog>
 
     <!-- image section for clothing, requires manually adjustments in css (remove any thats too much) -->
