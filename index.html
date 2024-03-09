@@ -28,6 +28,7 @@
     <script src="scripts/objects/Task.js"></script>
     <script src="scripts/objects/PhysicalTask.js"></script>
     <script src="scripts/objects/MentalTask.js"></script>
+    <script src="scripts/dailies.js"></script>
     <script src="scripts/index.js"></script>
     <script src="scripts/currency.js"></script>
 
@@ -94,13 +95,29 @@
         </p>
       </div>
       <input type="checkbox" id="physicalDaily" name="physicalDaily" disabled />
-      <label for="physicalDaily">pull</label>
-      <button id="completePhysicalButton" class="completeBtn">Complete</button
+      <label for="physicalDaily" id="physicalDailyPrompt"></label>
+      <button id="completePhysicalButton" class="completeBtn">Finished!</button
       ><br />
-s      <input type="checkbox" id="mentalDaily" name="mentalDaily" disabled />
-      <label for="mentalDaily">journey</label>
-      <button id="completeMentalButton" class="completeBtn">Start</button><br />
+      <input type="checkbox" id="mentalDaily" name="mentalDaily" disabled />
+      <label for="mentalDaily" id="mentalDailyPrompt"></label>
+      <button id="completeMentalButton" class="completeBtn">Open Journal</button><br />
       <button id="closeButton">Close</button>
+    </dialog>
+
+    <!-- pop-up for journal -->
+    <dialog id="journalScreen">
+      <div id="journalScreenTopUI">
+        <h1>Journal</h1>
+      </div>
+      <div id="moodDiv">
+        <button id="happyButton" class="moodButton"><span class="material-symbols-outlined">sentiment_satisfied</span></button>
+        <button id="neutralButton" class="moodButton"><span class="material-symbols-outlined">sentiment_neutral</span></button>
+        <button id="sadButton" class="moodButton"><span class="material-symbols-outlined">sentiment_dissatisfied</span></button>
+      </div>
+      <div id="journalScreenContent">
+        <textarea id="journalEntry" placeholder="Write your thoughts here..."></textarea>
+      </div>
+      <button id="closeJournalButton">Finalize!</button>
     </dialog>
 
     <!-- image section for clothing, requires manually adjustments in css (remove any thats too much) -->

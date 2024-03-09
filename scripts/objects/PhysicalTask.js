@@ -11,7 +11,7 @@ class PhysicalTask extends Task {
         this.#taskMaximum = workoutData[0];
         this.#taskUnits = workoutData[1];
         this.#workout = Object.keys(TaskType.PHYSICAL).find(key => TaskType.PHYSICAL[key] === workoutData);
-        let prompt = `Complete ${this.#taskMaximum} ${this.#taskUnits} ${this.#workout}`;
+        let prompt = `Complete ${this.#taskMaximum} ${this.#taskUnits} of ${this.#workout}`;
         this.setTaskPrompt(prompt);
     }
 

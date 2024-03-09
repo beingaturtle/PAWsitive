@@ -34,14 +34,31 @@
     border-radius: 1rem;
 }
 
-#banner h1 {
+#banner #clothes {
     position: absolute;
-    top: 13%;
+    top: 16%;
+    font-size: 1.9em;
+    font-weight: bold;
+}
+
+#banner #pet {
+    position: absolute;
+    top: 28%;
+    left: 13%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#pet span {
+    font-size: 1.7em;
+    color: rgb(216, 183, 16);
 }
 
 #pullButtons {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 #pullButtons button {
@@ -91,7 +108,9 @@
 }
 
 #bonusPull {
-    color: white;
+    color: #5A3DBD;
+    position: fixed;
+    top: 35%;
 }
 
 

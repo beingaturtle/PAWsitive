@@ -33,6 +33,7 @@
     justify-content: center;
     align-items: center;
     background-color: white;
+    margin-bottom: 15px;
 }
 
 #currency {
@@ -40,4 +41,5 @@
     align-items: center;
     margin: 5px;
     font-size: 20px;
+    
 }

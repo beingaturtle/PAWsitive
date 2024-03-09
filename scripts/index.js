@@ -37,48 +37,13 @@ function initializeButtons() {
     });
 }
 
-function setupDailyScreen() {
-    let dailyScreen = document.getElementById("dailyScreen");
-    let closeButton = document.getElementById("closeButton");
-    let physicalDaily = document.getElementById("physicalDaily");
-    let mentalDaily = document.getElementById("mentalDaily");
-    let completePhysicalButton = document.getElementById("completePhysicalButton");
-    let completeMentalButton = document.getElementById("completeMentalButton");
-
-    closeButton.addEventListener("click", () => {
-        dailyScreen.close();
-    });
-
-    completePhysicalButton.addEventListener("click", () => {
-        physicalDaily.checked = true;
-        completePhysicalButton.disabled = true;
-        localStorage.setItem("physicalCompleted", "true");
-        displayIcon();
-    });
-
-    completeMentalButton.addEventListener("click", () => {
-        mentalDaily.checked = true;
-        completeMentalButton.disabled = true;
-        localStorage.setItem("mentalCompleted", "true");
-        displayIcon();
-    });
-}
-
-function setDailies() {
-    
-}
-
-function randomizeDailies() {
-    
-}
-
-
-
 // timer for daily reset, runs on 8s for the sake of demo
 setInterval(() => { 
     localStorage.setItem("physicalCompleted", "false");
     localStorage.setItem("mentalCompleted", "false"); 
-    randomizeDailies();
+    let physicalDaily = randomizePhysicalDailies();
+    let mentalDaily = randomizeMentalDailies();
+    setDailies();
     displayIcon();
 }, 5000);
 
