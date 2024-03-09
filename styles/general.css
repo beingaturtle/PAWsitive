@@ -28,15 +28,16 @@
 #currencyBox {
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
     border-radius: 10px;
     width: 25%;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 #currency {
     display: flex;
     align-items: center;
     margin: 5px;
+    font-size: 20px;
 }
