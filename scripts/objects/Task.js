@@ -1,9 +1,9 @@
 class Task {
     
     // private fields marked with #
-    #taskDescription
-    #taskType
-    #completed
+    #taskDescription;
+    #taskType;
+    #completed;
 
     // public constructor
     constructor(taskType) {
