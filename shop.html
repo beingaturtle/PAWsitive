@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="styles/icons/backButton.css">
 
     <!-- Script links -->
-    <script src="scripts/constants/ClothingTypeEnum.js"></script>
+    <script src="scripts/constants/clothingType.js"></script>
     <script src="scripts/constants/colors.js"></script>
     <script src="scripts/objects/Clothing.js"></script>
     <script src="scripts/shop.js"></script>
+    <script src="scripts/currency.js"></script>
 
     <title>Shop</title>
 </head>
@@ -53,8 +54,9 @@
 
     <!-- dialog for pulling -->
     <dialog id="pullScreen">
-        <img src="pullResult">
+        <img id="pullResult">
         <p id="pullResultMessage"></p>
+        <button id="interact"></button>
     </dialog>
 </body>
 </html>
