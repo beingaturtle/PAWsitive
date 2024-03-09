@@ -13,9 +13,12 @@ function setUpJournalScreen() {
     let journalScreen = document.getElementById("journalScreen");
     let closeButton = document.getElementById("closeJournalButton");
     
+    
     closeButton.addEventListener("click", () => {
         closeJournal();
     });
+
+
 }
 
 function saveJournal() {
