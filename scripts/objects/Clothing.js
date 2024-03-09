@@ -18,6 +18,10 @@ class Clothing {
         return this.#color;
     }
 
+    getClothingName() {
+        return Object.keys(ClothingType).find(key => ClothingType[key] === this.#clothingType);
+    }
+
     setClothingType(clothingType) {
         this.#clothingType = clothingType;
     }
