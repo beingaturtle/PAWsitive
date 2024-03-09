@@ -56,21 +56,23 @@ function initializeButtons() {
 // function for opening gacha screen pulls
 async function openPullScreen(pullAmount) {
     let pullScreen = document.getElementById("pullScreen");
+    let pullScreenDiv = pullScreen.children[0];
+
     // index key: 0 = pullResult (image), 1 = pullResultMessage, 2 = interact
     for (i = 0; i < pullAmount; i++) {
         // make clothing object
         let item = new Clothing();
 
         // set image and message
-        pullScreen.children[0].src = item.getClothingType();
-        pullScreen.children[1].innerHTML = `You got a ${item.getClothingName()}`;
+        pullScreenDiv.children[0].src = item.getClothingType();
+        pullScreenDiv.children[1].innerHTML = `You got a ${item.getClothingName()}`;
 
         // set interact button to close if last item
         if (i == pullAmount - 1) {
-            pullScreen.children[2].innerHTML = "Close";
+            pullScreenDiv.children[2].innerHTML = "Close";
         } else {
             // set interact button to next if not last item
-            pullScreen.children[2].innerHTML = "Next";
+            pullScreenDiv.children[2].innerHTML = "Next";
         }
 
         pullScreen.showModal();
