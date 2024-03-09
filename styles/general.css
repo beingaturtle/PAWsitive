@@ -7,6 +7,14 @@
                 box-sizing: border-box;
 }
 
+/* Background */
+#background {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    height: 100%;
+}
+
 /* Top UI */
 #topUI {
     border-style: 1px solid black;
