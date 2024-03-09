@@ -1,14 +1,12 @@
 class Task {
     
     // private fields marked with #
-    #taskDescription; // String
-    #taskType; // TaskType enum
-    #completed; // Boolean
+    #taskType; // TaskType dictionary
+    #physicalType; // String, null if mental type
 
     // public constructor
     constructor(taskType) {
         this.#taskType = taskType;
-        this.#completed = false;
         this.#taskDescription = this.#pickTaskDescription(taskType);
     }
 
@@ -21,13 +19,7 @@ class Task {
         return this.#taskType;
     }
 
-    getCompletionStatus() {
-        return this.#completed;
-    }
-
-    setCompletionStatus(boolValue) {
-        this.#completed = boolValue;
-    }
+    
 
     // private pick task description method
     #pickTaskDescription(taskType) {
