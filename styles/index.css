@@ -1,26 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* Top UI */
-#topUI {
-    border-style: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
-/* Currency box */
-#currencyBox {
-    flex-direction: row;
-}
-
-/* Daily Box */
-#dailyBox {
-    flex-direction: row;
-}
 
 /* Character Avatar */
 #avatar {
@@ -42,6 +20,4 @@
     width: 100%;
     padding: 1rem;
 }
-
-
 
