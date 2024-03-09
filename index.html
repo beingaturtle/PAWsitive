@@ -17,13 +17,6 @@
     <link rel="stylesheet" href="styles/icons/clothesIcon.css" />
     <link rel="stylesheet" href="styles/icons/alertIcon.css" />
 
-        <!-- import poppin google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
-
     <!-- Script links -->
     <script src="scripts/constants/mentalTasks.js"></script>
     <script src="scripts/constants/physicalTasks.js"></script>
@@ -45,12 +38,12 @@
     <div id="topUI">
       <!-- box for currency -->
       <div id="currencyBox">
-        <p><span class="material-symbols-outlined">attach_money</span></p>
+        <span class="material-symbols-outlined">attach_money</span>
+        <p id="currency">0</p>
       </div>
       <!-- box for dailies -->
       <div id="dailyBox">
-        <span class="material-symbols-outlined" id="alertIcon">priority_high</span><span class="material-symbols-outlined" id="checkIcon">done</span>
-        <p id="currency">0</p>
+        <p><span class="material-symbols-outlined" id="alertIcon">priority_high</span><span class="material-symbols-outlined" id="checkIcon">done</span></p>
       </div>
     </div>
 
