@@ -1,8 +1,6 @@
-PHYSICAL_TASK_COUNT_50_LIST = (
-    "Sit-ups",
-    "Push-ups"
-);
-
-PHYSICAL_TASK_COUNT_10_LIST = (
-    "Jogging"
-)
+// Constants for physical tasks, and how much user needs to do
+const PHYSICAL_TASKS = {
+    "Jogging" : 10,
+    "Sit-ups" : 50,
+    "Push-ups" : 50
+}
