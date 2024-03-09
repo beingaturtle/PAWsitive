@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="styles/icons/statsIcon.css" />
     <link rel="stylesheet" href="styles/icons/clothesIcon.css" />
     <link rel="stylesheet" href="styles/icons/alertIcon.css" />
+    <link rel="stylesheet" href="styles/icons/backButton.css" />
 
     <!-- Script links -->
     <script src="scripts/constants/clothingType.js"></script>
@@ -35,7 +36,7 @@
   </head>
   <body>
     <!-- background image -->
-    <img src="images/background" />
+    <img id="background" src="images/background.png" />
 
     <!-- div for currency and daily -->
     <div id="topUI">
@@ -80,14 +81,16 @@
     <dialog id="dailyScreen">
       <div id="dailyScreenTopUI">
         <h1>Dailies</h1>
-        <p id="breakTokens"><span class="material-symbols-outlined">skip_next</span>0</p>
+        <p id="breakTokens">
+          <span class="material-symbols-outlined">skip_next</span>0
+        </p>
       </div>
       <input type="checkbox" id="physicalDaily" name="physicalDaily" disabled />
-      <label for="physicalDaily"></label>
-      <button id="completePhysicalButton">Complete</button><br />
+      <label for="physicalDaily">pull</label>
+      <button id="completePhysicalButton" class="completeBtn">Complete</button><br />
       <input type="checkbox" id="mentalDaily" name="mentalDaily" disabled />
-      <label for="mentalDaily"></label>
-      <button id="completeMentalButton">Complete</button><br />
+      <label for="mentalDaily">journey</label>
+      <button id="completeMentalButton" class="completeBtn">Complete</button><br />
       <button id="closeButton">Close</button>
     </dialog>
 
