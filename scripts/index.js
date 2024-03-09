@@ -64,9 +64,11 @@ function setupDailyScreen() {
     });
 }
 
-// timer for daily reset
+// timer for daily reset, runs on 8s for the sake of demo
 setInterval(() => { 
     localStorage.setItem("physicalCompleted", "false");
     localStorage.setItem("mentalCompleted", "false");
+    PhysicalTask = new PhysicalTask();
+    MentalTask = new MentalTask();
     displayIcon();
 }, 8000);
