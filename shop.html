@@ -16,6 +16,38 @@
     <title>Shop</title>
 </head>
 <body>
-    
+    <!-- div for currency and back button -->
+    <div id="topUI">
+        <!-- back button -->
+        <div id="backButton">
+            <a href="index.html">
+                <!-- back button picture -->
+                <img src="">
+            </a>
+        </div>
+        <!-- box for currency -->
+        <div id="currencyBox">
+
+        </div>
+    </div>
+
+    <!-- div for banner -->
+    <div id="banner">
+        <!-- image for banner picture -->
+        <img src="">
+        <div id="pullButtons">
+            <button id="onePull" disabled>Pull x1 ($10)</button>
+            <button id="tenPull" disabled>Pull x10 ($100)</button>
+        </div>
+    </div>
+
+    <!-- maybe integrate this into the banner art itself -->
+    <p>10 pulls ($100) = 12 pulls</p>
+
+    <!-- dialog for pulling -->
+    <dialog id="pullScreen">
+        <img src="pullResult">
+        <p id="pullResultMessage"></p>
+    </dialog>
 </body>
 </html>
