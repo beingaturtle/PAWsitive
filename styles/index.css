@@ -58,3 +58,14 @@
 
 
 }
+
+#dailyBox{
+    background-color: #5A3DBD;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+
+#alertIcon{
+    color: white !important;
+}
