@@ -64,9 +64,26 @@ function setupDailyScreen() {
     });
 }
 
-// timer for daily reset
+function setDailies() {
+    
+}
+
+function randomizeDailies() {
+    
+}
+
+
+
+// timer for daily reset, runs on 8s for the sake of demo
 setInterval(() => { 
     localStorage.setItem("physicalCompleted", "false");
-    localStorage.setItem("mentalCompleted", "false");
+    localStorage.setItem("mentalCompleted", "false"); 
+    randomizeDailies();
     displayIcon();
-}, 8000);
+}, 5000);
+
+// cycler for cycling between physical task types
+function* cycle(...items) {
+    while(true)
+      yield* items;
+  }
