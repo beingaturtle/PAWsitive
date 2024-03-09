@@ -43,7 +43,6 @@
     border: 1px solid black;
     border-radius: 10px;
     padding: 1em;
-    
 }
 
 #bannerPhoto {
@@ -58,4 +57,10 @@
 
 #pullButtons button {
     margin: 1rem 2rem;
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 5rem;
+    background-color: 
 }
+
+
