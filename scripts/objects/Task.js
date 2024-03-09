@@ -35,7 +35,7 @@ class Task {
             let randomNum = Math.random() * Object.keys(PHYSICAL_TASKS).length;
             return PHYSICAL_TASKS[Object.keys(PHYSICAL_TASKS)[randomNum]];
         }
-        let randomNum = Math.random() * MENTAL_TASKS.length;
+        let randomNum = Math.floor(Math.random() * MENTAL_TASKS.length);
         return MENTAL_TASKS[randomNum];
     }
 }
