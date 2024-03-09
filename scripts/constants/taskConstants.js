@@ -1,8 +1,8 @@
 // Constants for physical tasks, and how much user needs to do
 const PHYSICAL_TASKS = {
-    "Jogging" : [2, "km", "cardio"],
-    "Sit-ups" : [50, "reps", "core"],
-    "Push-ups" : [50, "reps", "upper body"]
+    "Jogging" : [2, "km"],
+    "Sit-ups" : [50, "reps"],
+    "Push-ups" : [50, "reps"]
 }
 
 // Constants for list of mental task prompts
