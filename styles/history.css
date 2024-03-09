@@ -43,3 +43,14 @@ body{
     padding: 20px;    
     
 }
+
+.activatedBtn{
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: white;
+    color: #5A3DBD;
+    border-color: white;
+    padding: 10px 20px;
+
+}
