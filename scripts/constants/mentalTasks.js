@@ -1,3 +1,4 @@
+// Constants for list of mental task prompts
 MENTAL_TASK_LIST = (
     "How are you feeling today?",
     "What would you rate your day today?",
