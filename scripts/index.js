@@ -68,7 +68,7 @@ function setupDailyScreen() {
 setInterval(() => { 
     localStorage.setItem("physicalCompleted", "false");
     localStorage.setItem("mentalCompleted", "false");
-    PhysicalTask = new PhysicalTask();
-    MentalTask = new MentalTask();
+    let physicalTask = new PhysicalTask();
+    let mentalTask = new MentalTask();
     displayIcon();
-}, 8000);
+}, 2000);
