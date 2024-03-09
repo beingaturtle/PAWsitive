@@ -49,16 +49,39 @@
 
 #pullScreen {
     width: 100%;
+    height: 60%;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: auto;
+    border:none;
+    border-radius: 1rem;
+    padding:1rem;
+}
+
+#pullScreenContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
 }
 
 #pullScreen img {
     width: 100%;
     border-radius: 1rem;
+}
+
+#pullScreen #interact {
+    padding: 1rem;
+    border-radius: 10rem;
+    width: 50%;
+    background-color: #5A3DBD;
+    color: white;
+    font-size: 1.5rem;
 }
 
 
