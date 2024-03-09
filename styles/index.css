@@ -21,3 +21,33 @@
     padding: 1rem;
 }
 
+#dailyScreen{
+    width: 90%;
+    margin: auto;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border-color: #5A3DBD;
+}
+
+#dailyScreen h1{
+    color: #5A3DBD;
+    font-weight: bold;
+    
+}
+.completeBtn{
+    background-color: white;
+    border-color: #5A3DBD;
+    color: #5A3DBD;
+    padding: 5px;
+    border-radius: 50px;
+}
+#dailyScreenTopUI{
+
+}
+#closeButton{
+    background-color: #5A3DBD;
+    color: white;
+    padding: 5px;
+    border-radius: 50px;
+
+}
