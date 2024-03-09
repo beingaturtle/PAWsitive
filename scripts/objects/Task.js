@@ -1,9 +1,9 @@
 class Task {
     
     // private fields marked with #
-    #taskDescription;
-    #taskType;
-    #completed;
+    #taskDescription; // String
+    #taskType; // TaskType enum
+    #completed; // Boolean
 
     // public constructor
     constructor(taskType) {
