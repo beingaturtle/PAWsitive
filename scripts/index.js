@@ -15,7 +15,7 @@ function displayIcon() {
         alertIcon.style.display = "none";
     } else if (physicalCompleted === "false" && mentalCompleted === "false") {
         document.getElementById("completePhysicalButton").disabled = false;
-        document.getElementById("completeMentalButton").disabled = false;
+        document.getElementById("openJournalButton").disabled = false;
         document.getElementById("physicalDaily").checked = false;
         document.getElementById("mentalDaily").checked = false;
         alertIcon.style.color = "black";

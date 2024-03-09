@@ -21,6 +21,8 @@ function setupDailyScreen() {
     completeMentalButton.addEventListener("click", () => {
         mentalDaily.checked = true;
         completeMentalButton.disabled = true;
+        setUpJournalScreen();
+        openJournal();
         localStorage.setItem("mentalCompleted", "true");
         displayIcon();
     });
@@ -45,3 +47,6 @@ function randomizePhysicalDailies() {
     return new PhysicalTask(randomNum);
 }
 
+function checkDailyState() {
+    
+}
