@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Top UI */
+#topUI {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#currencyBox {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 25%;
+    justify-content: space-around;
+}
+
+#currency {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+/* Middle UI */
+#middleUI {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1em;
+    
+}
+
+#bannerPhoto {
+    width: 80%;
+}
+
+#pullButtons {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+#pullButtons button {
+    margin: 1rem 2rem;
+}
