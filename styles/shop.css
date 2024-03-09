@@ -1,9 +1,20 @@
 
+#background {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    height: 100%;
+}
+
 /* Top UI */
 #topUI {
     flex-direction: row;
     justify-content: space-between;
 
+}
+
+.material-symbols-outlined {
+    color: black;
 }
 
 /* Middle UI */
@@ -82,6 +93,10 @@
     background-color: #5A3DBD;
     color: white;
     font-size: 1.5rem;
+}
+
+#bonusPull {
+    color: white;
 }
 
 
