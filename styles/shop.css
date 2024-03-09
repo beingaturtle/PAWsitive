@@ -47,4 +47,18 @@
     background-color: white;
 }
 
+#pullScreen {
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+}
+
+#pullScreen img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
 

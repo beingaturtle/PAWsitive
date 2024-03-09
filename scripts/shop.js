@@ -62,15 +62,15 @@ async function openPullScreen(pullAmount) {
         let item = new Clothing();
 
         // set image and message
-        pullScreen.childNodes[0].src = item.getClothingType();
-        pullScreen.childNodes[1].innerHTML = `You got a ${item.getClothingName()}`;
+        pullScreen.children[0].src = item.getClothingType();
+        pullScreen.children[1].innerHTML = `You got a ${item.getClothingName()}`;
 
         // set interact button to close if last item
         if (i == pullAmount - 1) {
-            pullScreen.childNodes[2].innerHTML = "Close";
+            pullScreen.children[2].innerHTML = "Close";
         } else {
             // set interact button to next if not last item
-            pullScreen.childNodes[2].innerHTML = "Next";
+            pullScreen.children[2].innerHTML = "Next";
         }
 
         pullScreen.showModal();
