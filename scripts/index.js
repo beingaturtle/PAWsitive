@@ -44,6 +44,7 @@ function setupDailyScreen() {
     let mentalDaily = document.getElementById("mentalDaily");
     let completePhysicalButton = document.getElementById("completePhysicalButton");
     let completeMentalButton = document.getElementById("completeMentalButton");
+    setDailies();
 
     closeButton.addEventListener("click", () => {
         dailyScreen.close();
@@ -65,20 +66,32 @@ function setupDailyScreen() {
 }
 
 function setDailies() {
-    
+    let physicalDaily = randomizePhysicalDailies();
+    let mentalDaily = randomizeMentalDailies();
+    let physicalDailyPrompt = document.getElementById("physicalDailyPrompt");
+    let mentalDailyPrompt = document.getElementById("mentalDailyPrompt");
+    mentalDailyPrompt.innerHTML = mentalDaily.getTaskPrompt();
+    physicalDailyPrompt.innerHTML = physicalDaily.getTaskPrompt();
 }
 
-function randomizeDailies() {
-    
+function randomizeMentalDailies() {
+    return new MentalTask();
+
 }
 
+function randomizePhysicalDailies() {
+    let randomNum = Math.floor(Math.random() * Object.keys(TaskType.PHYSICAL).length);
+    return new PhysicalTask(randomNum);
+}
 
 
 // timer for daily reset, runs on 8s for the sake of demo
 setInterval(() => { 
     localStorage.setItem("physicalCompleted", "false");
     localStorage.setItem("mentalCompleted", "false"); 
-    randomizeDailies();
+    let physicalDaily = randomizePhysicalDailies();
+    let mentalDaily = randomizeMentalDailies();
+    setDailies();
     displayIcon();
 }, 5000);
 
