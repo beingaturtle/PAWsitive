@@ -32,6 +32,7 @@
 #dailyScreen h1{
     color: #5A3DBD;
     font-weight: bold;
+    font-size: 40px;
     
 }
 .completeBtn{
@@ -45,9 +46,15 @@
 
 }
 #closeButton{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     background-color: #5A3DBD;
     color: white;
-    padding: 5px;
+    padding: 10px 20px;
     border-radius: 50px;
+    border: none;
+
 
 }
