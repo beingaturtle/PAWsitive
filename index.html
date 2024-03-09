@@ -10,12 +10,17 @@
     <!-- Stylesheet links -->
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/icons/checkmark.css" />
+    <link rel="stylesheet" href="styles/icons/currency.css" />
+    <link rel="stylesheet" href="styles/icons/shopIcon.css" />
+    <link rel="stylesheet" href="styles/icons/statsIcon.css" />
+    <link rel="stylesheet" href="styles/icons/clothesIcon.css" />
 
     <!-- Script links -->
     <script src="scripts/constants/mentalTasks.js"></script>
     <script src="scripts/constants/physicalTasks.js"></script>
     <script src="scripts/constants/clothingType.js"></script>
-    <script src="scripts/constants/TaskTypesEnum.js"></script>
+    <script src="scripts/constants/TaskTypeEnum.js"></script>
     <script src="scripts/constants/colors.js"></script>
     <script src="scripts/objects/Clothing.js"></script>
     <script src="scripts/objects/Task.js"></script>
@@ -26,17 +31,17 @@
   </head>
   <body>
     <!-- background image -->
-    <img src="images/" />
+    <img src="images/background" />
 
     <!-- div for currency and daily -->
     <div id="topUI">
       <!-- box for currency -->
       <div id="currencyBox">
-        <p>Currency:</p>
+        <p><span class="material-symbols-outlined">attach_money</span></p>
       </div>
       <!-- box for dailies -->
       <div id="dailyBox">
-        <p>Dailies</p>
+        <p><span class="material-symbols-outlined">priority_high</span><span class="material-symbols-outlined">done</span></p>
       </div>
     </div>
 
