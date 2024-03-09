@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- External links -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
 
     <!-- Stylesheet links -->
+<<<<<<< Updated upstream
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/shop.css">
     <link rel="stylesheet" href="styles/icons/backButton.css">
     <link rel="stylesheet" href="styles/icons/currency.css">
+=======
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/shop.css" />
+    <link rel="stylesheet" href="styles/icons/backButton.css" />
+>>>>>>> Stashed changes
 
     <!-- Script links -->
     <script src="scripts/constants/clothingType.js"></script>
@@ -21,39 +30,49 @@
     <script src="scripts/currency.js"></script>
 
     <title>Shop</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- div for currency and back button -->
     <div id="topUI">
-        <!-- back button -->
-        <div id="backButton">
-            <a href="index.html">
-                <!-- back button picture -->
-                <span class="material-symbols-outlined">arrow_back</span>
-            </a>
-        </div>
-        <!-- box for currency -->
-        <div id="currencyBox">
-            <span class="material-symbols-outlined">attach_money</span>
-            <p id="currency">0</p>
-        </div>
+      <!-- back button -->
+      <div id="backButton">
+        <a href="index.html">
+          <!-- back button picture -->
+          <span class="material-symbols-outlined">arrow_back</span>
+        </a>
+      </div>
+      <!-- box for currency -->
+      <div id="currencyBox">
+        <span class="material-symbols-outlined">attach_money</span>
+        <p id="currency">0</p>
+      </div>
     </div>
 
     <!-- div for banner -->
-    <div id="banner">
+    <div id="middleUI">
+      <p>This is your mom</p>
+      <div id="banner">
         <!-- image for banner picture -->
-        <img src="https://i.redd.it/any-must-pulls-from-these-banners-v0-ypk7serfdqba1.png?width=1080&format=png&auto=webp&s=a813fbbd4429bfe051a85edbfa9675d9f4ab8df9">
+        <img
+          id="bannerPhoto"
+          alt="Banner Photo"
+          src="https://i.redd.it/any-must-pulls-from-these-banners-v0-ypk7serfdqba1.png?width=1080&format=png&auto=webp&s=a813fbbd4429bfe051a85edbfa9675d9f4ab8df9"
+        />
         <!-- div for pull buttons -->
         <div id="pullButtons">
-            <button id="onePull">Pull x1 ($10)</button>
-            <button id="tenPull">Pull x10 ($100)</button>
+          <button id="onePull">Pull x1 ($10)</button>
+          <button id="tenPull">Pull x10 ($100)</button>
         </div>
+      </div>
+      <!-- maybe integrate this into the banner art itself -->
+      <p>10 pulls ($100) = 12 pulls</p>
     </div>
 
-    <!-- maybe integrate this into the banner art itself -->
-    <p>10 pulls ($100) = 12 pulls</p>
-
     <!-- dialog for pulling -->
-    <dialog id="pullScreen"><img id="pullResult"><p id="pullResultMessage"></p><button id="interact"></button></dialog>
-</body>
+    <dialog id="pullScreen">
+      <img id="pullResult" />
+      <p id="pullResultMessage"></p>
+      <button id="interact"></button>
+    </dialog>
+  </body>
 </html>

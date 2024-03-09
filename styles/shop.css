@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Top UI */
+#topUI {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#currencyBox {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 25%;
+    justify-content: space-around;
+}
+
+#currency {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+/* Middle UI */
+#middleUI {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px; 
+    
+}
+
+#bannerPhoto {
+    width: 150%;
+}
+
+#pullButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
