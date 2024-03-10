@@ -20,7 +20,7 @@ class PhysicalTask extends Task {
     }
 
     // Getters and Setters
-    getWorkoutType() {
+    getWorkout() {
         return this.#workout;
     }
 
