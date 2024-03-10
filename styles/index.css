@@ -12,6 +12,7 @@
     background-color: white;
 }
 
+
 #dailyScreen{
     width: 90%;
     margin: auto;
@@ -161,4 +162,9 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+}
+/* dressing window css */
+.activated{
+    color: #5A3DBD;
+    font-weight: bold;
 }
