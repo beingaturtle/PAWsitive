@@ -38,7 +38,7 @@ function addItems(btnID) {
     let items;
     switch (btnID) {
         case 'hairStyleBtn':
-            items = ['./images/wardrobe/hair small.png'];
+            items = ['./images/wardrobe/bald small.png','./images/wardrobe/hair small.png'];
             break;
         case 'shirtBtn':
             items = ['./images/wardrobe/Tshirt small.png','./images/wardrobe/hoodie small.png'];
@@ -65,7 +65,16 @@ function addItems(btnID) {
         itemImg.style.opacity = '0.3';
         itemCategories.appendChild(itemImg);
 
-    });
-
-    
-}
+        if (item === './images/wardrobe/bald small.png') {
+            itemImg.style.filter = 'grayscale(0%)';
+            itemImg.style.opacity = '1';
+        };
+        if (item === './images/wardrobe/Tshirt small.png') {
+            itemImg.style.filter = 'grayscale(0%)';
+            itemImg.style.opacity = '1';
+        }
+        if (item === './images/wardrobe/shorts small.png') {
+            itemImg.style.filter = 'grayscale(0%)';
+            itemImg.style.opacity = '1';
+        }
+})};
