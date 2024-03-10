@@ -7,6 +7,7 @@ class Task {
     // public constructor
     constructor(taskType) {
         this.#taskType = taskType;
+        this.#completed = false;
     }
 
     // Getters and Setters
