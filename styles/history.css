@@ -54,3 +54,10 @@ body{
     padding: 10px 20px;
 
 }
+.historyTitle{
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
