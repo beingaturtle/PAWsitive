@@ -1,4 +1,4 @@
-function initializeJournalScreen(physicalDaily, mentalDaily) {
+function initializeJournalScreen() {
   // get every button
   let journalScreen = document.getElementById("journalScreen");
   let happyButton = document.getElementById("happyButton");
@@ -36,8 +36,8 @@ function initializeJournalScreen(physicalDaily, mentalDaily) {
 
   // add event listener for finalize button
   closeJournalButton.addEventListener("click", () => {
+    let mentalDaily = JSON.parse(localStorage.getItem("mentalDaily"));
     if (mood == null) mood = "neutral";
-
     if (!journalEntry.value) {
       mentalDaily.promptResponse = "You didn't write anything today!";
     } else {
