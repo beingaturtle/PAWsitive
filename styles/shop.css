@@ -1,117 +1,118 @@
-
-
-
 /* Top UI */
 #topUI {
-    flex-direction: row;
-    justify-content: space-between;
-
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .material-symbols-outlined {
-    color: black;
+  color: black;
 }
 
 /* Middle UI */
 #middleUI {
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    color: #5A3DBD;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #5a3dbd;
 }
 
 #banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
 }
 
 #bannerPhoto {
-    width: 100%;
-    border-radius: 1rem;
+  width: 100%;
+  border-radius: 1rem;
 }
 
 #banner #clothes {
-    position: absolute;
-    top: 13%;
-    font-size: 1.9em;
-    font-weight: bold;
-    margin: 1em;
+  position: absolute;
+  top: 13%;
+  font-size: 1.9em;
+  font-weight: bold;
+  margin: 1em;
 }
 
 #banner #pet {
-    position: absolute;
-    top: 28%;
-    left: 13%;
-    text-align: center;
-    font-size: 1rem;
+  position: absolute;
+  top: 28%;
+  left: 13%;
+  text-align: center;
+  font-size: 1rem;
 }
 
 #pet span {
-    font-size: 1.7em;
-    color: rgb(216, 183, 16);
+  font-size: 1.7em;
+  color: rgb(216, 183, 16);
 }
 
 #pullButtons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 #pullButtons button {
-    margin: 1rem 2rem;
-    border: 1px solid black;
-    padding: 1em;
-    border-radius: 5rem;
-    color: #5A3DBD;
-    background-color: white;
+  margin: 1rem 2rem;
+  border: 1px solid black;
+  padding: 1em;
+  border-radius: 5rem;
+  color: #5a3dbd;
+  background-color: white;
 }
 
 #pullScreen {
-    width: 100%;
-    height: 60%;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: auto;
-    border:none;
-    border-radius: 1rem;
-    padding:1rem;
+  width: 100%;
+  height: 60%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 #pullScreenContainer {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #pullScreen img {
-    width: 100%;
-    border-radius: 1rem;
+  width: 100%;
+  border-radius: 1rem;
 }
 
 #pullScreen #interact {
-    padding: 1rem;
-    border-radius: 10rem;
-    width: 50%;
-    background-color: #5A3DBD;
-    color: white;
-    font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 10rem;
+  width: 50%;
+  background-color: #5a3dbd;
+  color: white;
+  font-size: 1.5rem;
+  box-shadow: 0 5px #667;
+  transition: 0.1s ease-in-out; /* Add transition for smooth change */
 }
 
-#bonusPull {
-    color: #5A3DBD;
-    position: fixed;
-    top: 35%;
+#pullScreen #interact:focus {
+  box-shadow: 0 5px #667;
+  transform: translateY(3px);
+  background-color: #4833a2;
 }
 
-
+*/ #bonusPull {
+  color: #5a3dbd;
+  position: fixed;
+  top: 35%;
+}
