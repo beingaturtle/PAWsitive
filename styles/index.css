@@ -94,12 +94,10 @@
     width: 100%;
 
 }
-#character, #shoes, #top, #bottom{
+#character, #shoesDiv, #top, #bottom{
     width: 70%;
 }
-#shoes{
-    width: 83%;
-}
+
 #pet{
     display: flex;
     justify-content: end;
