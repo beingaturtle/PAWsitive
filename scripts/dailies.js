@@ -4,35 +4,63 @@ function initializeDailyScreen(physicalDaily, mentalDaily) {
     let physicalCheckbox = document.getElementById("physicalDaily");
     let completePhysicalButton = document.getElementById("completePhysicalButton");
     let openJournalButton = document.getElementById("openJournalButton");
-    
+    let skipDailyButton = document.getElementById("skipDailyButton");
+
+    // add event listener for close button
     closeButton.addEventListener("click", () => {
         dailyScreen.close();
     })
 
+    // add event listener for physical daily completion button
     completePhysicalButton.addEventListener("click", () => {
         physicalDaily.completed = true;
-        completePhysicalButton.disabled = true;
-        physicalCheckbox.checked = true;
-        localStorage.setItem("physicalDaily", JSON.stringify(physicalDaily));
+        saveToLocalStorage("physicalDaily", physicalDaily);
         updateDailyScreen();
     })
 
+    // add event listener for button to open journal
     openJournalButton.addEventListener("click", () => {
         document.getElementById("journalScreen").showModal();
     })
-
+ 
     setDailyPrompts(physicalDaily, mentalDaily);
+    
+    // add event listener to skip button
+    skipDailyButton.addEventListener("click", () => {
+        physicalDaily.completed = true;
+        mentalDaily.completed = true;
+        updateBreakToken(fetchBreakTokenCount() - 1);
+        updateDailyScreen();
+        skipDailyButton.disabled = true;
+    })
+    if (fetchBreakTokenCount() == 0 || (physicalDaily.completed && mentalDaily.completed)) {
+        skipDailyButton.disabled = true;
+    }
 }
 
-function updateDailyScreen() {
+function updateSkipDailyButton(physicalDaily, mentalDaily) {
+    // handle skip daily button logic
+    let breakTokenCount = fetchBreakTokenCount();
+
+    if (breakTokenCount == 0 || (physicalDaily.completed && mentalDaily.completed)) {
+        skipDailyButton.disabled = true;
+    } else {
+        // re-enabled button after reset
+        skipDailyButton.disabled = false;
+    }
+}
+
+async function updateDailyScreen() {
     // read localStorage for daily completion status
     let physicalDaily = JSON.parse(localStorage.getItem("physicalDaily"));
     let mentalDaily = JSON.parse(localStorage.getItem("mentalDaily"));
+    console.log(physicalDaily);
 
     // update physical daily
     let physicalCheckbox = document.getElementById("physicalDaily");
     let completePhysicalButton = document.getElementById("completePhysicalButton");
-    if (physicalDaily.completed) {
+    
+    if (physicalDaily.completed === true) {
         physicalCheckbox.checked = true;
         completePhysicalButton.disabled = true;
     } else {
@@ -42,13 +70,16 @@ function updateDailyScreen() {
     // update mental daily
     let mentalCheckbox = document.getElementById("mentalDaily");
     let openJournalButton = document.getElementById("openJournalButton");
-    if (mentalDaily.completed) {
+    if (mentalDaily.completed === true) {
         mentalCheckbox.checked = true;
         openJournalButton.disabled = true;
     } else {
         mentalCheckbox.checked = false;
         openJournalButton.disabled = false;
     }
+
+    setDailyPrompts(physicalDaily, mentalDaily);
+    updateSkipDailyButton(physicalDaily, mentalDaily);
     displayDailyButtonIcon(physicalDaily, mentalDaily);
 }
 

@@ -1,12 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
     let mentalDaily = JSON.parse(localStorage.getItem("mentalDaily"));
     let physicalDaily = JSON.parse(localStorage.getItem("physicalDaily"));
+    let currency = localStorage.getItem("currency");
+    let breakTokens = localStorage.getItem("breakTokens");
 
     // in case first time visit where nothing in local storage
-    if (mentalDaily == null || physicalDaily == null) {
+    if (mentalDaily == null || physicalDaily == null || currency == null || breakTokens == null) {
         generateDailiesJSON();
         mentalDaily = JSON.parse(localStorage.getItem("mentalDaily"));
         physicalDaily = JSON.parse(localStorage.getItem("physicalDaily"));
+        localStorage.setItem("currency", 0);
+        localStorage.setItem("breakTokens", 2);
     }
 
     displayDailyButtonIcon(physicalDaily, mentalDaily);
@@ -15,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateDailyScreen();
     initializeJournalScreen(physicalDaily, mentalDaily);
     populateCurrency();
+    populateBreakToken();
 })
 
 function displayDailyButtonIcon(physicalDaily, mentalDaily) {
@@ -56,4 +61,11 @@ function initializeButtons() {
 setInterval(() => { 
     generateDailiesJSON();
     updateDailyScreen();
-}, 50000);
+    updateSkipDailyButton(localStorage.getItem("physicalDaily"), localStorage.getItem("mentalDaily"));
+}, 7000);
+
+// timer for skip token refresh, runs on 30s for the sake of demo
+setInterval(() => {
+    localStorage.setItem("breakTokens", 2);
+    populateBreakToken();
+}, 10000)

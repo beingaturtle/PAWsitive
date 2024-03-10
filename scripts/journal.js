@@ -39,6 +39,7 @@ function initializeJournalScreen(physicalDaily, mentalDaily) {
         // disable open journal button
         let openJournalButton = document.getElementById("openJournalButton");
         openJournalButton.disabled = true;
+        updateSkipDailyButton(physicalDaily, mentalDaily);
         updateDailyScreen();
     });
 }
