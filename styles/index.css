@@ -94,9 +94,10 @@
     width: 100%;
 
 }
-#character, #shoes, #top, #bottom{
+#character, #shoesDiv, #top, #bottom{
     width: 70%;
 }
+
 #pet{
     display: flex;
     justify-content: end;
@@ -105,6 +106,7 @@
     width: 40%;
 }
 /* journal window css */
+
 #journalScreen{
     width: 90%;
     margin: auto;
@@ -121,6 +123,9 @@
     color: white;
     margin-bottom: 10px;
     
+}
+#journalScreenTopUI{
+    width: 90%;
 }
 #journalEntry{
     width: 90%;
@@ -151,7 +156,7 @@
 #closeJournalButton{
     margin-top: 20px;
     padding: 10px;
-    width: 70%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50px;

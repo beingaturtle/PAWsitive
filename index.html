@@ -42,6 +42,7 @@
     <script src="scripts/breakTokens.js"></script>
     <script src="scripts/clothes.js"></script>
     <script src="scripts/wardrobe.js"></script>
+    <script src="scripts/dressing.js"></script>
     <script src="scripts/pulls.js"></script>
 
     <title>Avatar</title>
@@ -74,18 +75,22 @@
       <div id="character" class="dressing">
         <img src="images/character.png" id="characterImg" alt="character" />
       </div>
-
-      <div id="shoes" class="dressing"></div>
-
+      <div id="character" class="dressing">
+        <img id="hair" />
+      </div>
+      <div id="shoesDiv" class="dressing">
+        <img src="images/shoes/shoes.png" id="shoes" />
+      </div>
       <div id="bottom" class="dressing">
-        <img src="images/pants/shorts.png" id="shortsImg" alt="shorts" />
+        <img src="images/pants/shorts.png" id="pants" alt="pants" />
       </div>
 
       <div id="top" class="dressing">
-        <img src="images/shirts/Tshirt.png" id="TshirtImg" alt="Tshirt" />
+        <img src="images/shirts/Tshirt.png" id="shirt" alt="Tshirt" />
       </div>
     </div>
     <div id="pet">
+      <img id="dog"></img>
     </div>
 
     <!-- bottom navbar -->
@@ -136,13 +141,13 @@
       </div>
       <div id="moodDiv">
         <button id="happyButton" class="moodButton moodSelected">
-          <span class="material-symbols-outlined">sentiment_satisfied</span>
+          <span class="material-symbols-outlined" id="happyIcon">sentiment_satisfied</span>
         </button>
         <button id="neutralButton" class="moodButton">
-          <span class="material-symbols-outlined">sentiment_neutral</span>
+          <span class="material-symbols-outlined" id="neutralIcon">sentiment_neutral</span>
         </button>
         <button id="sadButton" class="moodButton">
-          <span class="material-symbols-outlined">sentiment_dissatisfied</span>
+          <span class="material-symbols-outlined" id="sadIcon">sentiment_dissatisfied</span>
         </button>
       </div>
       <div id="journalScreenContent">
@@ -167,12 +172,5 @@
         <div id="items"></div>
       </div>
     </dialog>
-
-    <!-- image section for clothing, requires manually adjustments in css (remove any thats too much) -->
-    <img id="hair" />
-    <img id="shirts" />
-    <img id="pants" />
-    <img id="shoes" />
-    <img id="pet" />
   </body>
 </html>
