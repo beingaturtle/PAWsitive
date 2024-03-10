@@ -62,10 +62,24 @@ async function openPullScreen(pullAmount) {
     let pullScreen = document.getElementById("pullScreen");
     let pullScreenDiv = pullScreen.children[0];
 
+
     // index key: 0 = pullResult (image), 1 = pullResultMessage, 2 = interact
-    for (i = 0; i < pullAmount; i++) {
+    for (let i = 0; i < pullAmount; i++) {
         // make clothing object
-        let item = new Clothing();
+        let item;
+        let rand = Math.random();
+  
+        // establish the probability of getting a certain item
+        if (rand < 0.05) {
+            item = new Clothing(ClothingType.pet);
+        } else if (rand < 0.3) {
+            let clothingTypes = ['hair', 'shirt', 'pants', 'shoes'];
+            let randomType = clothingTypes[Math.floor(Math.random() * clothingTypes.length)];
+            item = new Clothing(ClothingType[randomType]);
+        } else {
+            item = new Clothing(ClothingType.coin);
+        }
+        console.log(rand);
 
         // check if item is a coin
         if (item.getClothingName() == "coin") {

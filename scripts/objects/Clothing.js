@@ -4,9 +4,9 @@ class Clothing {
     #color; // String (for hex code)
 
     // public constructor for randomization
-    constructor() {
-        this.#clothingType = this.#pickClothingType();
-        this.#color = this.#pickClothingColor();
+    constructor(clothingType, color) {
+        this.#clothingType = clothingType || this.#pickClothingType();
+        this.#color = color || this.#pickClothingColor();
     }
 
     // Getters and Setters
@@ -38,6 +38,6 @@ class Clothing {
 
     #pickClothingColor() {
         let randomNum = Math.floor(Math.random() * Object.keys(colors).length);
-        return ClothingType[Object.keys(ClothingType)[randomNum]];
+        return colors[Object.keys(colors)[randomNum]];
     }
 }
