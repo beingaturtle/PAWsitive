@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   displayDailyButtonIcon(physicalDaily, mentalDaily);
   initializeButtons();
-  initializeDailyScreen(physicalDaily, mentalDaily);
+  initializeDailyScreen();
   updateDailyScreen();
   initializeJournalScreen(physicalDaily, mentalDaily);
   populateCurrency();
@@ -70,10 +70,10 @@ setInterval(() => {
     localStorage.getItem("physicalDaily"),
     localStorage.getItem("mentalDaily")
   );
-}, 10000);
+}, 5000);
 
 // timer for skip token refresh, runs on 25s for the sake of demo
 setInterval(() => {
   localStorage.setItem("breakTokens", 2);
   populateBreakToken();
-}, 25000);
+}, 6000);
