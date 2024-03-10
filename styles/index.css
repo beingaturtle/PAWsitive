@@ -64,6 +64,8 @@
 #checkIcon{
     color: white !important;
 }
+
+/* character css */
 #avatar {
     position: relative;
     width: 80%;
@@ -89,4 +91,70 @@
 }
 #character, #shoes, #top, #bottom{
     width: 70%;
+}
+
+/* journal window css */
+#journalScreen{
+    width: 90%;
+    margin: auto;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border-color: #5A3DBD;
+    background-color: #5A3DBD;
+}
+
+#journalScreen h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    
+}
+#journalEntry{
+    width: 90%;
+    margin-top: 10px;
+    border-color: #5A3DBD;
+    border-radius: 5px;
+    border-width: 2px;
+    font-size: 24px;
+    color:#5A3DBD;
+    padding: 10px;
+    font-style: italic;
+
+}
+#moodDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.moodButton{
+    background-color: white;
+    border: 1px solid #5A3DBD;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+#closeJournalButton{
+    margin-top: 20px;
+    padding: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+.divider{
+    margin: 8px;
+    width: 90%;
+
+}
+#dailyScreenTopUI{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
