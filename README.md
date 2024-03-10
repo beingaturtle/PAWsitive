@@ -1,5 +1,7 @@
 # Pawsitive (QDS Hackathon Project)
 
+![Game Screenshot](game_screenshot.png)
+
 ## Contributors
 
 - Jonathan Liu
@@ -15,7 +17,7 @@ Many students often tend to forgo their personal wellbeing for the sake of exter
 
 ## Features
 
-### 1. Mental Wel-Being
+### 1. Mental Well-Being
 
 - Daily Journal
 - Mood Tracker
