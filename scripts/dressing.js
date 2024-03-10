@@ -17,8 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById(btnID).classList.add("activated");
         console.log(btnID)
     
-        
-        
         addItems(btnID);
     }
     
