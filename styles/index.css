@@ -72,7 +72,7 @@
 }
 
 .placeholder {
-    height: 300px;
+    height: 370px;
 
     width: 100%;
 }
@@ -90,7 +90,13 @@
 #character, #shoes, #top, #bottom{
     width: 70%;
 }
-
+#pet{
+    display: flex;
+    justify-content: end;
+}
+#dog{
+    width: 40%;
+}
 /* journal window css */
 #journalScreen{
     width: 90%;
