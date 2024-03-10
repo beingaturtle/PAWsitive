@@ -70,15 +70,16 @@ async function openPullScreen(pullAmount) {
     // establish the probability of getting a certain item
     if (rand < 0.05) {
       item = new Clothing(ClothingType.pet);
+      savePull(item)
     } else if (rand < 0.3) {
       let clothingTypes = ["hair", "shirt", "pants", "shoes"];
       let randomType =
         clothingTypes[Math.floor(Math.random() * clothingTypes.length)];
       item = new Clothing(ClothingType[randomType]);
+      savePull(item)
     } else {
       item = new Clothing(ClothingType.coin);
     }
-    console.log(rand);
 
     // check if item is a coin
     if (item.getClothingName() == "coin") {
