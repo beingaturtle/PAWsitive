@@ -36,9 +36,17 @@ body{
     justify-content: space-between;
 }
 
-.historyBox{
+#contentExercise {
     background-color: white;
-    margin: 40px 20px;
+    margin: 30px 20px;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.eachJournal{
+    background-color: white;
+    margin: 30px 20px;
     border-radius: 10px;
     padding: 20px;    
     
@@ -62,7 +70,7 @@ body{
     margin-bottom: 20px;
 }
 
-/* content css */
+/* exercise content css */
 #contentExercise *{
     font-weight: 500;
     font-size: 50px;
@@ -72,4 +80,24 @@ body{
 #workOutDays{
     color:darkcyan;
     font-weight: bold;
+}
+
+/* mood content css */
+.eachJournal{
+    display: flex;
+    flex-direction: row;
+}
+.eachJournal p{
+    width:70%;
+    display: inline-block;
+    ;
+}
+.eachJournal button{
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+}
+.eachJournal button span{
+    color:#5A3DBD;
+
 }
