@@ -36,9 +36,10 @@
 
 #banner #clothes {
     position: absolute;
-    top: 16%;
+    top: 13%;
     font-size: 1.9em;
     font-weight: bold;
+    margin: 1em;
 }
 
 #banner #pet {
