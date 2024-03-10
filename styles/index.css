@@ -66,6 +66,7 @@
 
 #alertIcon{
     color: white !important;
+    cursor: pointer;
 }
 
 #checkIcon{
@@ -108,13 +109,11 @@
     width: 40%;
 }
 /* journal window css */
-#physicalDaily, #mentalDaily{
-    
-}
 
 #tasksDiv label{
     font-size: 16px;
     font-weight: 600;
+    width: 60%;
 }
 #tasksDiv button{
     border: 1px solid #5A3DBD;
