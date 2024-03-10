@@ -1,6 +1,6 @@
 # Pawsitive (QDS Hackathon Project)
 
-![Game Screenshot](game_screenshot.png)
+![Game Screenshot](images/game_screenshot.png)
 
 ## Contributors
 
