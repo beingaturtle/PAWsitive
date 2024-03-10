@@ -4,7 +4,7 @@ function setupDailyScreen() {
     let physicalDaily = document.getElementById("physicalDaily");
     let mentalDaily = document.getElementById("mentalDaily");
     let completePhysicalButton = document.getElementById("completePhysicalButton");
-    let completeMentalButton = document.getElementById("completeMentalButton");
+    let openJournalButton = document.getElementById("openJournalButton");
     setDailies();
 
     closeButton.addEventListener("click", () => {
@@ -18,9 +18,9 @@ function setupDailyScreen() {
         displayIcon();
     });
 
-    completeMentalButton.addEventListener("click", () => {
+    openJournalButton.addEventListener("click", () => {
         mentalDaily.checked = true;
-        completeMentalButton.disabled = true;
+        openJournalButton.disabled = true;
         setUpJournalScreen();
         openJournal();
         localStorage.setItem("mentalCompleted", "true");
@@ -45,8 +45,4 @@ function randomizeMentalDailies() {
 function randomizePhysicalDailies() {
     let randomNum = Math.floor(Math.random() * Object.keys(TaskType.PHYSICAL).length);
     return new PhysicalTask(randomNum);
-}
-
-function checkDailyState() {
-    
 }
