@@ -1,234 +1,270 @@
-
-
 /* Footer */
 #footer {
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    padding: 1rem;
-    background-color: white;
-    border-top: 3px solid #5A3DBD;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+  border-top: 3px solid #5a3dbd;
 }
 
-#background{
-    width: 100%;
-    height: 95%;
+#background {
+  width: 100%;
+  height: 95%;
 }
 
-#dailyScreen{
-    width: 90%;
-    margin: auto;
-    padding: 30px 20px;
-    border-radius: 10px;
-    border-color: #5A3DBD;
+#dailyScreen {
+  width: 90%;
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border-color: #5a3dbd;
 }
 
-#dailyScreen h1{
-    color: #5A3DBD;
-    font-weight: bold;
-    font-size: 40px;
-    
+#dailyScreen h1 {
+  color: #5a3dbd;
+  font-weight: bold;
+  font-size: 40px;
 }
 
-.completeBtn{
-    background-color: white;
-    border-color: #5A3DBD;
-    color: #5A3DBD;
-    padding: 5px;
-    border-radius: 50px;
-    font-size: 15px;
-
+.completeBtn {
+  background-color: white;
+  border-color: #5a3dbd;
+  color: #5a3dbd;
+  padding: 5px;
+  border-radius: 50px;
+  font-size: 15px;
 }
 
-#closeButton{
-    margin-top: 30px !important;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    background-color: #5A3DBD;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 50px !important;
-    border: none;
-
-
+#closeButton {
+  margin-top: 30px !important;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: #5a3dbd;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px !important;
+  border: none;
 }
 
-#dailyBox{
-    background-color: #5A3DBD;
-    border-radius: 10px;
-    margin-top: 10px;
-
+#dailyBox {
+  background-color: #5a3dbd;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
-#alertIcon{
-    color: white !important;
-    cursor: pointer;
+#alertIcon {
+  color: white !important;
+  cursor: pointer;
 }
 
-#checkIcon{
-    color: white !important;
+#checkIcon {
+  color: white !important;
 }
 
 /* character css */
 #avatar {
-    position: relative;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .placeholder {
-    height: 370px;
+  height: 370px;
 
-    width: 100%;
+  width: 100%;
 }
 
 .dressing {
-    position: absolute;
-    top: 0px;
-    left: 20px;
-    width: 70%;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  width: 70%;
 }
 .dressing img {
-    width: 100%;
+  width: 100%;
+}
+#character,
+#shoesDiv,
+#top,
+#bottom {
+  width: 70%;
+}
 
+#pet {
+  display: flex;
+  justify-content: end;
 }
-#character, #shoesDiv, #top, #bottom{
-    width: 70%;
-}
-
-#pet{
-    display: flex;
-    justify-content: end;
-}
-#dog{
-    width: 40%;
+#dog {
+  width: 40%;
 }
 /* journal window css */
 
-#tasksDiv label{
-    font-size: 16px;
-    font-weight: 600;
-    width: 60%;
+#tasksDiv label {
+  font-size: 16px;
+  font-weight: 600;
+  width: 60%;
 }
-#tasksDiv button{
-    border: 1px solid #5A3DBD;
-    margin: 2px;
-    font-weight: 500;
-    border-radius: 5px;
+#tasksDiv button {
+  border: 1px solid #5a3dbd;
+  margin: 2px;
+  font-weight: 500;
+  border-radius: 5px;
 }
-#journalScreen{
-    width: 90%;
-    margin: auto;
-    padding: 30px 30px;
-    border-radius: 10px;
-    border-color: #5A3DBD;
-    background-color: #5A3DBD;
-}
-
-#journalScreen h1{
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 10px;
-    
+#journalScreen {
+  width: 90%;
+  margin: auto;
+  padding: 30px 30px;
+  border-radius: 10px;
+  border-color: #5a3dbd;
+  background-color: #5a3dbd;
 }
 
-#journalEntry{
-    width: 100%;
-    margin-top: 10px;
-    border-color: #5A3DBD;
-    border-radius: 5px;
-    border-width: 2px;
-    font-size: 24px;
-    color:#5A3DBD;
-    padding: 10px;
-    font-style: italic;
-
-}
-#moodDiv{
-    display: flex;
-    justify-content: space-between;
-}
-#moodDiv span{
-    color: white;
-}
-.moodButton{
-    background-color: transparent;
-    border: 0px solid white;
-    padding: 2px;
+#journalScreen h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
 }
 
-#closeJournalButton{
-    margin-top: 20px;
-    padding: 10px;
-    width: 100%;
-    border-radius: 50px;
-    border: 2px solid white;
-    background-color: transparent;
-    color: white;
-    font-weight: bold;
-    font-size: 24px;
+#journalEntry {
+  width: 100%;
+  margin-top: 10px;
+  border-color: #5a3dbd;
+  border-radius: 5px;
+  border-width: 2px;
+  font-size: 24px;
+  color: #5a3dbd;
+  padding: 10px;
+  font-style: italic;
 }
-.divider{
-    margin: 8px;
-    width: 90%;
+#moodDiv {
+  display: flex;
+  justify-content: space-between;
+}
+#moodDiv span {
+  color: white;
+}
+.moodButton {
+  background-color: transparent;
+  border: 0px solid white;
+  padding: 2px;
+}
 
+#closeJournalButton {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 50px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
 }
-#dailyScreenTopUI{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+.divider {
+  margin: 8px;
+  width: 90%;
 }
-#skipDailyButton{
-    background-color: white;
-    border: none;
-    color: #5A3DBD;
+#dailyScreenTopUI {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#skipDailyButton {
+  background-color: white;
+  border: none;
+  color: #5a3dbd;
+}
+
+#skipContainer {
+  display: flex;
+  justify-content: end;
 }
 .skipBtn {
-    display: flex;
-    margin-bottom: 8px;
-
+  display: flex;
+  margin-bottom: 8px;
+  border: 1px solid #5a3dbd;
+  border-radius: 5px;
+  padding: 5px;
 }
+
+/* Physical Task */
+.eachTask1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#physicalTask {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#physicalTask #physicalDailyPrompt {
+  width: 100%;
+  text-align: center;
+}
+
+/* Mental Task */
+.eachTask2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mentalTask {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#mentalTask #mentalDailyPrompt {
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+}
+
 /* dressing window css */
-.activated{
-    color: #5A3DBD;
-    font-weight: bold;
+.activated {
+  color: #5a3dbd;
+  font-weight: bold;
 }
 
-
-.moodSelected span{
-    color: orange !important;
-
+.moodSelected span {
+  color: orange !important;
 }
 
 /* wardrobe */
 
 #wardrobeScreen {
-    border: none;
+  border: none;
 }
 
 #wardrobeContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width:100%;
-    height: 100%;
-    border-bottom: 3px solid #5A3DBD;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #5a3dbd;
 }
 
 #itemCategories {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 #items {
-    height: 100%;
+  height: 100%;
 }
-

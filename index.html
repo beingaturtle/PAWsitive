@@ -117,23 +117,31 @@
         
         <p id="breakTokens"></p>
       </div>
+      <div id = "skipContainer">
       <div class="skipBtn">
         <span class="material-symbols-outlined" style="font-size: 30px;">skip_next</span>
         <button id="skipDailyButton">skip Dailies</button>
       </div>
+      </div>
       <div id="tasksDiv">
-        <div class="eachTask">
+        <div class="eachTask1">
+          <div id = "physicalTask">
           <input type="checkbox" id="physicalDaily" name="physicalDaily" disabled />
           <label for="physicalDaily" id="physicalDailyPrompt"></label>
         </div>
-        <button id="completePhysicalButton" class="completeBtn">Finished!</button
-        ><br />
+        <button id="completePhysicalButton" class="completeBtn">Finished!</button>
+        </div>
+
         
         <hr style="border-style: dotted; color: rgb(160, 160, 160); width: 2px;">
+        <div class="eachTask2">
+        <div id = "mentalTask">
         <input type="checkbox" id="mentalDaily" name="mentalDaily" disabled />
         <label for="mentalDaily" id="mentalDailyPrompt"></label>
-        <button id="openJournalButton" class="completeBtn">Open Journal</button
-        ><br />
+        </div>
+        <button id="openJournalButton" class="completeBtn">Open Journal</button>
+      </div>
+
         <button id="closeButton">Close</button>
       </div>
     </dialog>
