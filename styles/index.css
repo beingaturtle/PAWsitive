@@ -1,13 +1,4 @@
 
-/* Character Avatar */
-#avatar {
-    /* width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 30%; */
-
-
-}
 
 /* Footer */
 #footer {
@@ -73,15 +64,29 @@
 #checkIcon{
     color: white !important;
 }
+#avatar {
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-#characterImg, #shoesImg, #shortsImg, #TshirtImg{
+.placeholder {
+    height: 300px;
+
     width: 100%;
+}
+
+.dressing {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 70%;
+}
+.dressing img {
+    width: 100%;
+
 }
 #character, #shoes, #top, #bottom{
     width: 70%;
-}
-.dressing{
-    position: absolute;
-    top: 20px;
-    left: 20px;
 }
