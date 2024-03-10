@@ -3,9 +3,9 @@ class MentalTask extends Task {
     #mood; // int 1-3 (sad, neutral, happy)
     #promptResponse; // String
 
-    constructor() {
+    constructor(randomNum) {
         super(TaskType.MENTAL);
-        this.setTaskPrompt(this.generatePrompt());
+        this.setTaskPrompt(TaskType.MENTAL[randomNum]);
     }
 
     // Getters and Setters
@@ -23,9 +23,5 @@ class MentalTask extends Task {
     
     setPromptResponse(response) {
         this.#promptResponse = response;
-    }
-
-    generatePrompt() {
-        return TaskType.MENTAL[Math.floor(Math.random() * TaskType.MENTAL.length)];
     }
 }
