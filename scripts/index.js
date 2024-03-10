@@ -33,6 +33,9 @@ function displayDailyButtonIcon(physicalDaily, mentalDaily) {
 
   if (physicalDaily.completed && mentalDaily.completed) {
     // show checkmark upon completion
+    let currency = Number(localStorage.getItem("currency"));
+    currency += 10;
+    updateCurrency(currency);
     checkmarkIcon.style.display = "block";
     alertIcon.style.display = "none";
   } else if (!(physicalDaily.completed || mentalDaily.completed)) {
