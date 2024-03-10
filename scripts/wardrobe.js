@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    addItems("hairStyleBtn");
+
     function addEventListenerToDressingBtn() {
         const dressingBtns = document.querySelectorAll("#wardrobeContainer .dressBtn");
         dressingBtns.forEach(btn => {
             btn.addEventListener("click", () => {
                 updateClassName(btn.id);
-                showClassImg(btn.id);
             });
         });
     }
@@ -15,13 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.classList.remove("activated");
         });
         document.getElementById(btnID).classList.add("activated");
-        console.log(btnID)
-    
-        addItems(btnID);
-    }
-    
-    function showClassImg(btnID){
         
+        addItems(btnID);
     }
     
     // Call the function to add event listeners to dressing buttons
@@ -51,18 +48,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
         }
         
-        let ownedItems = JSON.parse(localStorage.getItem("wardrobe"));
         items.forEach(item => {
-            console.log(item);
+            let owned = checkedOwned(btnID);
             const itemImg = document.createElement("img");
-            itemImg.src = item;
-            itemImg.style.width = '20%'; // set width to 50%
-            itemImg.style.border = '1px solid #5A3DBD';
-            itemImg.style.borderRadius = '5px';
-            itemImg.style.margin = '5px';
-            itemImg.style.filter = 'grayscale(100%)';
-            itemImg.style.opacity = '0.3';
-            itemCategories.appendChild(itemImg);
+            if (!owned) {
+                itemImg.src = item;
+                itemImg.style.width = '20%'; // set width to 50%
+                itemImg.style.border = '1px solid #5A3DBD';
+                itemImg.style.borderRadius = '5px';
+                itemImg.style.margin = '5px';
+                itemImg.style.filter = 'grayscale(100%)';
+                itemImg.style.opacity = '0.3';
+                itemCategories.appendChild(itemImg);
+            } else {
+                itemImg.src = item;
+                itemImg.style.width = '20%'; // set width to 50%
+                itemImg.style.border = '1px solid #5A3DBD';
+                itemImg.style.borderRadius = '5px';
+                itemImg.style.margin = '5px';
+                itemCategories.appendChild(itemImg);
+                itemImg.style.filter = 'grayscale(0%)';
+                itemImg.style.opacity = '1';
+            }
     
             if (item === './images/wardrobe/bald small.png') {
                 itemImg.style.filter = 'grayscale(0%)';
@@ -86,4 +93,32 @@ document.addEventListener('DOMContentLoaded', () => {
             }
     })};
     
+    function checkedOwned(btnID) {
+        let ownedItems = JSON.parse(localStorage.getItem("wardrobe"));
+        if (ownedItems == null) {
+            return false;
+        }
+        let itemType;
+        switch (btnID) {
+            case 'hairStyleBtn':
+                itemType = "hair"
+                break;
+            case 'shirtBtn':
+                itemType = "shirt"
+                break;
+            case 'pantsBtn':
+                itemType = "pants"
+                break;
+            case 'shoeBtn':
+                itemType = "shoes"
+                break;
+            case 'petBtn':
+                itemType = "pet"
+                break;
+        }
+        if (ownedItems[itemType]) {
+            return true;
+        }
+        return false;
+    }
 })
