@@ -60,15 +60,14 @@
       </div>
     </div>
 
-  <!-- avatar image -->
-  <div id="avatar">
-    <div class="placeholder"></div>
-    <div id="character" class="dressing">
-      <img src="images/character.png" id="characterImg" alt="character" />
-    </div>
-    
-    <div id="shoes" class="dressing">
-    </div>
+    <!-- avatar image -->
+    <div id="avatar">
+      <div class="placeholder"></div>
+      <div id="character" class="dressing">
+        <img src="images/character.png" id="characterImg" alt="character" />
+      </div>
+
+      <div id="shoes" class="dressing"></div>
 
       <div id="bottom" class="dressing">
         <img src="images/pants/shorts.png" id="shortsImg" alt="shorts" />
@@ -96,41 +95,58 @@
       </a>
     </div>
 
-  <!-- pop-up for dailies -->
-  <dialog id="dailyScreen">
-    <div id="dailyScreenTopUI">
-      <h1>Dailies</h1>
-      <p id="breakTokens">
-        <span class="material-symbols-outlined">skip_next</span>0
-      </p>
-    </div>
-    <input type="checkbox" id="physicalDaily" name="physicalDaily" disabled />
-    <label for="physicalDaily" id="physicalDailyPrompt"></label>
-    <button id="completePhysicalButton" class="completeBtn">Finished!</button><br />
-    <input type="checkbox" id="mentalDaily" name="mentalDaily" disabled />
-    <label for="mentalDaily" id="mentalDailyPrompt"></label>
-    <button id="openJournalButton" class="completeBtn">Open Journal</button><br />
-    <button id="closeButton">Close</button>
-  </dialog>
+    <!-- pop-up for dailies -->
+    <dialog id="dailyScreen">
+      <div id="dailyScreenTopUI">
+        <h1>Dailies</h1>
+        <p id="breakTokens">
+          <span class="material-symbols-outlined">skip_next</span>0
+        </p>
+      </div>
+      <input type="checkbox" id="physicalDaily" name="physicalDaily" disabled />
+      <label for="physicalDaily" id="physicalDailyPrompt"></label>
+      <button id="completePhysicalButton" class="completeBtn">Finished!</button
+      ><br />
+      <input type="checkbox" id="mentalDaily" name="mentalDaily" disabled />
+      <label for="mentalDaily" id="mentalDailyPrompt"></label>
+      <button id="openJournalButton" class="completeBtn">Open Journal</button
+      ><br />
+      <button id="closeButton">Close</button>
+    </dialog>
 
-  <!-- pop-up for journal -->
-  <dialog id="journalScreen">
-    <div id="journalScreenTopUI">
-      <h1>Journal</h1>
-    </div>
-    <div id="moodDiv">
-      <button id="happyButton" class="moodButton"><span
-          class="material-symbols-outlined">sentiment_satisfied</span></button>
-      <button id="neutralButton" class="moodButton"><span
-          class="material-symbols-outlined">sentiment_neutral</span></button>
-      <button id="sadButton" class="moodButton"><span
-          class="material-symbols-outlined">sentiment_dissatisfied</span></button>
-    </div>
-    <div id="journalScreenContent">
-      <textarea id="journalEntry" placeholder="Write your thoughts here..."></textarea>
-    </div>
-    <button id="closeJournalButton">Finalize!</button>
-  </dialog>
+    <!-- pop-up for journal -->
+    <dialog id="journalScreen">
+      <div id="journalScreenTopUI">
+        <h1>Journal</h1>
+      </div>
+      <div id="moodDiv">
+        <button id="happyButton" class="moodButton">
+          <span class="material-symbols-outlined">sentiment_satisfied</span>
+        </button>
+        <button id="neutralButton" class="moodButton">
+          <span class="material-symbols-outlined">sentiment_neutral</span>
+        </button>
+        <button id="sadButton" class="moodButton">
+          <span class="material-symbols-outlined">sentiment_dissatisfied</span>
+        </button>
+      </div>
+      <div id="journalScreenContent">
+        <textarea
+          id="journalEntry"
+          placeholder="Write your thoughts here..."
+        ></textarea>
+      </div>
+      <button id="closeJournalButton">Finalize!</button>
+    </dialog>
+
+    <!-- pop-up for clothes -->
+    <dialog id="wardrobeScreen">
+      <div id="hairStyle">Hair</div>
+      <div id="shirt">Shirt</div>
+      <div id="pants">Pants</div>
+      <div id="shoe">Shoes</div>
+      <div id="pet">Pet</div>
+    </dialog>
 
     <!-- image section for clothing, requires manually adjustments in css (remove any thats too much) -->
     <img id="hair" />
