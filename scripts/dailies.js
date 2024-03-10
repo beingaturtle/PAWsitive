@@ -1,6 +1,7 @@
 function initializeDailyScreen(physicalDaily, mentalDaily) {
   let closeButton = document.getElementById("closeButton");
   let dailyScreen = document.getElementById("dailyScreen");
+  let taskJustCompleted = false;
 
   let physicalCheckbox = document.getElementById("physicalDaily");
   let completePhysicalButton = document.getElementById(
@@ -17,6 +18,7 @@ function initializeDailyScreen(physicalDaily, mentalDaily) {
   // add event listener for physical daily completion button
   completePhysicalButton.addEventListener("click", () => {
     physicalDaily.completed = true;
+    physicalCheckbox.checked = true;
     saveToLocalStorage("physicalDaily", physicalDaily);
     updateDailyScreen();
   });
@@ -32,10 +34,12 @@ function initializeDailyScreen(physicalDaily, mentalDaily) {
   skipDailyButton.addEventListener("click", () => {
     physicalDaily.completed = true;
     mentalDaily.completed = true;
+    mentalDaily.mentalCheckbox = true;
     updateBreakToken(fetchBreakTokenCount() - 1);
     saveToLocalStorage("physicalDaily", physicalDaily);
     saveToLocalStorage("mentalDaily", mentalDaily);
     skipDailyButton.disabled = true;
+    physicalCheckbox.checked = true;
     updateDailyScreen();
   });
   if (

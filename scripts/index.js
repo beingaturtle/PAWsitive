@@ -62,7 +62,7 @@ function initializeButtons() {
   });
 }
 
-// timer for daily reset, runs on 8s for the sake of demo
+// timer for daily reset, runs on 10s for the sake of demo
 setInterval(() => {
   generateDailiesJSON();
   updateDailyScreen();
@@ -70,10 +70,10 @@ setInterval(() => {
     localStorage.getItem("physicalDaily"),
     localStorage.getItem("mentalDaily")
   );
-}, 7000);
+}, 10000);
 
-// timer for skip token refresh, runs on 30s for the sake of demo
+// timer for skip token refresh, runs on 25s for the sake of demo
 setInterval(() => {
   localStorage.setItem("breakTokens", 2);
   populateBreakToken();
-}, 10000);
+}, 25000);
