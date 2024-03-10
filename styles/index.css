@@ -39,17 +39,19 @@
     color: #5A3DBD;
     padding: 5px;
     border-radius: 50px;
+    font-size: 15px;
+
 }
 
 #closeButton{
-    margin-top: 20px;
+    margin-top: 30px !important;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     background-color: #5A3DBD;
     color: white;
     padding: 10px 20px;
-    border-radius: 50px;
+    border-radius: 50px !important;
     border: none;
 
 
@@ -106,11 +108,24 @@
     width: 40%;
 }
 /* journal window css */
+#physicalDaily, #mentalDaily{
+    
+}
 
+#tasksDiv label{
+    font-size: 16px;
+    font-weight: 600;
+}
+#tasksDiv button{
+    border: 1px solid #5A3DBD;
+    margin: 2px;
+    font-weight: 500;
+    border-radius: 5px;
+}
 #journalScreen{
     width: 90%;
     margin: auto;
-    padding: 30px 20px;
+    padding: 30px 30px;
     border-radius: 10px;
     border-color: #5A3DBD;
     background-color: #5A3DBD;
@@ -124,11 +139,9 @@
     margin-bottom: 10px;
     
 }
-#journalScreenTopUI{
-    width: 90%;
-}
+
 #journalEntry{
-    width: 90%;
+    width: 100%;
     margin-top: 10px;
     border-color: #5A3DBD;
     border-radius: 5px;
@@ -142,7 +155,6 @@
 #moodDiv{
     display: flex;
     justify-content: space-between;
-    width: 90%;
 }
 #moodDiv span{
     color: white;
@@ -156,9 +168,7 @@
 #closeJournalButton{
     margin-top: 20px;
     padding: 10px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     border-radius: 50px;
     border: 2px solid white;
     background-color: transparent;
