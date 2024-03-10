@@ -13,6 +13,10 @@
     border-top: 3px solid #5A3DBD;
 }
 
+#background{
+    width: 100%;
+    height: 95%;
+}
 
 #dailyScreen{
     width: 90%;
