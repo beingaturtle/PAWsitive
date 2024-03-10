@@ -168,3 +168,22 @@
     color: #5A3DBD;
     font-weight: bold;
 }
+
+/* dressing categories */
+
+#wardrobeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:100%;
+    height: 100%;
+}
+#itemCategories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#items {
+    height: 100%;
+}
