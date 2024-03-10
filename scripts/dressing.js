@@ -4,7 +4,6 @@ function addEventListenerToDressingBtn() {
     dressingBtns.forEach(btn => {
         btn.addEventListener("click", () => {
             updateClassName(btn.id);
-            showClassImg(btn.id);
         });
     });
 }
@@ -22,9 +21,6 @@ function updateClassName(btnID) {
     addItems(btnID);
 }
 
-function showClassImg(btnID){
-    
-}
 
 // Call the function to add event listeners to dressing buttons
 addEventListenerToDressingBtn();

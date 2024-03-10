@@ -109,10 +109,13 @@
     <dialog id="dailyScreen">
       <div id="dailyScreenTopUI">
         <h1>Dailies</h1>
-        <span class="material-symbols-outlined">skip_next</span>
+        
         <p id="breakTokens"></p>
       </div>
-      <button id="skipDailyButton">Skip Dailies</button>
+      <div class="skipBtn">
+        <span class="material-symbols-outlined" style="font-size: 30px;">skip_next</span>
+        <button id="skipDailyButton">skip Dailies</button>
+      </div>
       <div id="tasksDiv">
         <input type="checkbox" id="physicalDaily" name="physicalDaily" disabled />
         <label for="physicalDaily" id="physicalDailyPrompt"></label>

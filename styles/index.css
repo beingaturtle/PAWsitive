@@ -171,11 +171,22 @@
     justify-content: space-between;
     margin-bottom: 20px;
 }
+#skipDailyButton{
+    background-color: white;
+    border: none;
+    color: #5A3DBD;
+}
+.skipBtn {
+    display: flex;
+    margin-bottom: 8px;
+
+}
 /* dressing window css */
 .activated{
     color: #5A3DBD;
     font-weight: bold;
 }
+
 
 .moodSelected span{
     color: orange !important;
@@ -206,3 +217,4 @@
 #items {
     height: 100%;
 }
+
