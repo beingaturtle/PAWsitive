@@ -69,6 +69,7 @@ async function openPullScreen(pullAmount) {
         let item;
         let rand = Math.random();
   
+        // establish the probability of getting a certain item
         if (rand < 0.05) {
             item = new Clothing(ClothingType.pet);
         } else if (rand < 0.3) {
