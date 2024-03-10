@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 itemImg.style.border = '1px solid #5A3DBD';
                 itemImg.style.borderRadius = '5px';
                 itemImg.style.margin = '5px';
+                itemImg.classList.add("owned");
                 itemCategories.appendChild(itemImg);
                 itemImg.style.filter = 'grayscale(0%)';
                 itemImg.style.opacity = '1';
@@ -74,22 +75,27 @@ document.addEventListener('DOMContentLoaded', () => {
             if (item === './images/wardrobe/bald small.png') {
                 itemImg.style.filter = 'grayscale(0%)';
                 itemImg.style.opacity = '1';
+                itemImg.classList.add("owned");
             };
             if (item === './images/wardrobe/Tshirt small.png') {
                 itemImg.style.filter = 'grayscale(0%)';
                 itemImg.style.opacity = '1';
+                itemImg.classList.add("owned");
             }
             if (item === './images/wardrobe/shorts small.png') {
                 itemImg.style.filter = 'grayscale(0%)';
                 itemImg.style.opacity = '1';
+                itemImg.classList.add("owned");
             }
             if (item === './images/wardrobe/nothing shoes small.png') {
                 itemImg.style.filter = 'grayscale(0%)';
                 itemImg.style.opacity = '1';
+                itemImg.classList.add("owned");
             }
             if (item === './images/wardrobe/nothing pet small.png') {
                 itemImg.style.filter = 'grayscale(0%)';
                 itemImg.style.opacity = '1';
+                itemImg.classList.add("owned");
             }
     })};
     
