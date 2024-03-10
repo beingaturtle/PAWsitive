@@ -94,10 +94,12 @@ async function openPullScreen(pullAmount) {
 
     // set interact button to close if last item
     if (i == pullAmount - 1) {
-      pullScreenDiv.children[2].innerHTML = "Close" + " " + "[" + (i + 1) + "]";
+      pullScreenDiv.children[2].innerHTML =
+        "Close" + " " + " [ " + (i + 1) + " ] ";
     } else {
       // set interact button to next if not last item
-      pullScreenDiv.children[2].innerHTML = "Next" + " " + "[" + (i + 1) + "]";
+      pullScreenDiv.children[2].innerHTML =
+        "Next" + " " + " [ " + (i + 1) + " ] ";
     }
 
     pullScreen.showModal();
