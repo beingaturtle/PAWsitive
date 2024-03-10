@@ -4,7 +4,6 @@ document.addEventListener("click", (e) => {
     let clickedID = e.target.id;
     let clickedClass = e.target.className;
 
-    console.log(clickedClass);
     // check if an image was clicked
     if (clickedTag == "IMG" && clickedClass == "owned") {
         // check what image was clicked
