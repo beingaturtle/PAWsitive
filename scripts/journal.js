@@ -43,3 +43,6 @@ function initializeJournalScreen(physicalDaily, mentalDaily) {
         updateDailyScreen();
     });
 }
+
+
+// add active effect
