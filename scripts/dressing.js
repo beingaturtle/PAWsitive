@@ -47,10 +47,10 @@ function addItems(btnID) {
             items = ['./images/wardrobe/shorts small.png','./images/wardrobe/pants small.png'];
             break;
         case 'shoeBtn':
-            items = ['./images/wardrobe/shoes small.png'];
+            items = ['./images/wardrobe/nothing shoes small.png', './images/wardrobe/shoes small.png'];
             break;
         case 'petBtn':
-            items = ['./images/wardrobe/dog small.png'];
+            items = ['./images/wardrobe/nothing pet small.png', './images/wardrobe/dog small.png'];
             break;
     }
 
@@ -74,6 +74,14 @@ function addItems(btnID) {
             itemImg.style.opacity = '1';
         }
         if (item === './images/wardrobe/shorts small.png') {
+            itemImg.style.filter = 'grayscale(0%)';
+            itemImg.style.opacity = '1';
+        }
+        if (item === './images/wardrobe/nothing shoes small.png') {
+            itemImg.style.filter = 'grayscale(0%)';
+            itemImg.style.opacity = '1';
+        }
+        if (item === './images/wardrobe/nothing pet small.png') {
             itemImg.style.filter = 'grayscale(0%)';
             itemImg.style.opacity = '1';
         }
