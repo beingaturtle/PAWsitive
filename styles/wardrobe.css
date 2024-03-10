@@ -1,0 +1,13 @@
+#wardrobeScreen {
+    position:fixed;
+    bottom: 8.5%;
+    height: 15%;
+    width: 100%;
+}
+
+#wardrobeContainer {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
