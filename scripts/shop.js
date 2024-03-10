@@ -28,7 +28,9 @@ function initializeButtons() {
 
     // add event listeners to button
     onePull.addEventListener("click", () => {
+        let currency = parseInt(localStorage.getItem("currency"));
         currency -= 10;
+        localStorage.setItem("currency", currency);
         updateCurrency(currency);
         if (currency < ONE_PULL_COST) {
             onePull.disabled = true;
@@ -37,7 +39,9 @@ function initializeButtons() {
     })
 
     tenPull.addEventListener("click", () => {
+        let currency = parseInt(localStorage.getItem("currency"));
         currency -= 100;
+        localStorage.setItem("currency", currency);
         updateCurrency(currency);
         if (currency < ONE_PULL_COST) {
             onePull.disabled = true;
@@ -66,6 +70,14 @@ async function openPullScreen(pullAmount) {
         // set image and message
         pullScreenDiv.children[0].src = item.getClothingType();
         pullScreenDiv.children[1].innerHTML = `You got a ${item.getClothingName()}`;
+
+        // check if item is a coin
+        if (item.getClothingName() == "coin") {
+            let currency = parseInt(localStorage.getItem("currency"));
+            currency += 3;
+            localStorage.setItem("currency", currency);
+            populateCurrency(currency);
+        }
 
         // set interact button to close if last item
         if (i == pullAmount - 1) {
