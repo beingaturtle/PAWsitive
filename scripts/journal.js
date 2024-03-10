@@ -7,7 +7,6 @@ function initializeJournalScreen(physicalDaily, mentalDaily) {
     let journalEntry = document.getElementById("journalEntry");
     let closeJournalButton = document.getElementById("closeJournalButton");
     let mood;
-    const moodIcons = document.querySelectorAll("#moodDiv .material-symbols-outlined");
 
     // add event listeners to every mood button
     happyButton.addEventListener("click", () => {
