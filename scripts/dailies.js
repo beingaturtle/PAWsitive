@@ -1,7 +1,6 @@
-function initializeDailyScreen(physicalDaily, mentalDaily) {
+function initializeDailyScreen() {
   let closeButton = document.getElementById("closeButton");
   let dailyScreen = document.getElementById("dailyScreen");
-  let taskJustCompleted = false;
 
   let physicalCheckbox = document.getElementById("physicalDaily");
   let completePhysicalButton = document.getElementById(
@@ -17,6 +16,7 @@ function initializeDailyScreen(physicalDaily, mentalDaily) {
 
   // add event listener for physical daily completion button
   completePhysicalButton.addEventListener("click", () => {
+    let physicalDaily = JSON.parse(localStorage.getItem("physicalDaily"));
     physicalDaily.completed = true;
     physicalCheckbox.checked = true;
     saveToLocalStorage("physicalDaily", physicalDaily);
@@ -32,14 +32,16 @@ function initializeDailyScreen(physicalDaily, mentalDaily) {
 
   // add event listener to skip button
   skipDailyButton.addEventListener("click", () => {
+    let physicalDaily = JSON.parse(localStorage.getItem("physicalDaily"));
+    let mentalDaily = JSON.parse(localStorage.getItem("mentalDaily"));
     physicalDaily.completed = true;
     mentalDaily.completed = true;
     mentalDaily.mentalCheckbox = true;
     updateBreakToken(fetchBreakTokenCount() - 1);
-    saveToLocalStorage("physicalDaily", physicalDaily);
-    saveToLocalStorage("mentalDaily", mentalDaily);
     skipDailyButton.disabled = true;
     physicalCheckbox.checked = true;
+    saveToLocalStorage("physicalDaily", physicalDaily);
+    saveToLocalStorage("mentalDaily", mentalDaily);
     updateDailyScreen();
   });
   if (
@@ -69,7 +71,6 @@ async function updateDailyScreen() {
   // read localStorage for daily completion status
   let physicalDaily = JSON.parse(localStorage.getItem("physicalDaily"));
   let mentalDaily = JSON.parse(localStorage.getItem("mentalDaily"));
-  console.log(physicalDaily);
 
   // update physical daily
   let physicalCheckbox = document.getElementById("physicalDaily");
