@@ -9,6 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
 function initializeButtons() {
   const ONE_PULL_COST = 10;
 
+  // Audio object for gacha
+  gachaClick = new Audio("../sfx/gachaClick.mp3");
+  gachaWin = new Audio("../sfx/gachaWin.mp3");
+
   // get buttons
   let onePull = document.getElementById("onePull");
   let tenPull = document.getElementById("tenPull");
@@ -52,6 +56,8 @@ function initializeButtons() {
   });
 
   document.getElementById("interact").addEventListener("click", () => {
+    // Audio object for gacha
+    gachaClick.play();
     document.getElementById("pullScreen").close();
   });
 }
@@ -70,6 +76,7 @@ async function openPullScreen(pullAmount) {
     // establish the probability of getting a certain item
     if (rand < 0.05) {
       item = new Clothing(ClothingType.pet);
+      gachaWin.play();
       savePull(item)
     } else if (rand < 0.3) {
       let clothingTypes = ["hair", "shirt", "pants", "shoes"];
