@@ -37,6 +37,8 @@ function initializeJournalScreen() {
   // add event listener for finalize button
   closeJournalButton.addEventListener("click", () => {
     let mentalDaily = JSON.parse(localStorage.getItem("mentalDaily"));
+    let currency = Number(localStorage.getItem("currency"));
+    currency += 5;
     if (mood == null) mood = "neutral";
     if (!journalEntry.value) {
       mentalDaily.promptResponse = "You didn't write anything today!";
@@ -47,6 +49,7 @@ function initializeJournalScreen() {
     mentalDaily.completed = true;
     mentalCheckbox.checked = true;
     saveToLocalStorage("mentalDaily", mentalDaily);
+    updateCurrency(currency);
     journalScreen.close();
 
     // disable open journal button
