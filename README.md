@@ -1,6 +1,7 @@
 # PAWsitive (QDS Hackathon Project)
 
-##RUN THE GAME ON iPHONE XR DIMENSIONS (414 X 896)##
+## RUN THE GAME ON iPHONE XR DIMENSIONS (414 X 896)
+
 <br>
 <br>
 
