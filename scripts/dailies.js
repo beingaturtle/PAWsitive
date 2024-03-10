@@ -17,9 +17,12 @@ function initializeDailyScreen() {
   // add event listener for physical daily completion button
   completePhysicalButton.addEventListener("click", () => {
     let physicalDaily = JSON.parse(localStorage.getItem("physicalDaily"));
+    let currency = Number(localStorage.getItem("currency"));
+    currency += 5;
     physicalDaily.completed = true;
     physicalCheckbox.checked = true;
     saveToLocalStorage("physicalDaily", physicalDaily);
+    updateCurrency(currency);
     updateDailyScreen();
   });
 
@@ -34,12 +37,15 @@ function initializeDailyScreen() {
   skipDailyButton.addEventListener("click", () => {
     let physicalDaily = JSON.parse(localStorage.getItem("physicalDaily"));
     let mentalDaily = JSON.parse(localStorage.getItem("mentalDaily"));
+    let currency = Number(localStorage.getItem("currency"));
+    currency += 10;
     physicalDaily.completed = true;
     mentalDaily.completed = true;
     mentalDaily.mentalCheckbox = true;
     updateBreakToken(fetchBreakTokenCount() - 1);
     skipDailyButton.disabled = true;
     physicalCheckbox.checked = true;
+    updateCurrency(currency);
     saveToLocalStorage("physicalDaily", physicalDaily);
     saveToLocalStorage("mentalDaily", mentalDaily);
     updateDailyScreen();
