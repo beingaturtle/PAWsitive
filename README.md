@@ -1,4 +1,4 @@
-# Pawsitive (QDS Hackathon Project)
+# PAWsitive (QDS Hackathon Project)
 
 ![Game Screenshot](images/game_screenshot.png)
 
@@ -11,10 +11,10 @@
 
 ## Pitch
 
-Do you want to play video games and improve your health and wellbeing at the same time? Well look no further, Pawisitive is an app that allows you to do just that!
+Do you want to play video games and improve your health and well-being at the same time? Well look no further, PAWsitive is an app that allows you to do just that!
 <br>
 <br>
-Many students often tend to forgo their personal wellbeing for the sake of external factors, such as grades. Our app is designed to help students become more conscientious about their own wellbeing by game-ifying healthy activities. Through our app, we wish for students to build a healthy daily routine that will lead to better health and wellbeing in the long term.
+Many of us tend to forget about these wellness apps due to the lack of consistency and incentives. Our app is designed to help students become more conscientious about their well-being by giving them a game that makes them come back for more. Through our app, we wish for students to build a healthy daily routine that will lead to better health and well-being in the long term.
 
 ## Features
 
