@@ -11,16 +11,27 @@ function initializeJournalScreen(physicalDaily, mentalDaily) {
     // add event listeners to every mood button
     happyButton.addEventListener("click", () => {
         // add some styling here
+        updateClassName(happyButton.id);
         mood = "happy";
     });
     neutralButton.addEventListener("click", () => {
         // add some styling here
+        updateClassName(neutralButton.id);
         mood = "neutral";
     });
     sadButton.addEventListener("click", () => {
         // add some styling here
+        updateClassName(sadButton.id);
         mood = "sad";
     });
+
+    function updateClassName(btnID) {
+        const moodBtns = document.querySelectorAll("#moodDiv .moodButton");
+        moodBtns.forEach(btn => {
+            btn.classList.remove("moodSelected");
+        });
+        document.getElementById(btnID).classList.add("moodSelected");
+    }
 
     // add event listener for finalize button
     closeJournalButton.addEventListener("click", () => {
