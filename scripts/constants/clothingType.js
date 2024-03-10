@@ -1,7 +1,8 @@
 const ClothingType = Object.freeze({
-    "hat" : "images/hats/trash.webp",
-    "shirt" : "images/shirts/trash.webp",
-    "pants" : "images/pants/trash.webp",
-    "shoes" : "images/shoes/trash.webp",
-    "pet" : "images/pets/temp5star.jpg"
+    "hair" : "images/hair/hair.png",
+    "shirt" : "images/shirts/get hoodie.png",
+    "pants" : "images/pants/get pants.png",
+    "shoes" : "images/shoes/get shoes.png",
+    "pet" : "images/pet/get dog.png",
+    "coin": "images/coin/get 3coins.png"
 });
