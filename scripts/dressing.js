@@ -58,6 +58,11 @@ function addItems(btnID) {
         const itemImg = document.createElement("img");
         itemImg.src = item;
         itemImg.style.width = '20%'; // set width to 50%
+        itemImg.style.border = '1px solid #5A3DBD';
+        itemImg.style.borderRadius = '5px';
+        itemImg.style.margin = '5px';
+        itemImg.style.filter = 'grayscale(100%)';
+        itemImg.style.opacity = '0.3';
         itemCategories.appendChild(itemImg);
 
     });
