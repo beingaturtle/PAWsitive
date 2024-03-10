@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 itemImg.style.filter = 'grayscale(0%)';
                 itemImg.style.opacity = '1';
             }
-    
+            itemImg.id = item;
             if (item === './images/wardrobe/bald small.png') {
                 itemImg.style.filter = 'grayscale(0%)';
                 itemImg.style.opacity = '1';
