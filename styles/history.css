@@ -61,3 +61,15 @@ body{
     text-align: center;
     margin-bottom: 20px;
 }
+
+/* content css */
+#contentExercise *{
+    font-weight: 500;
+    font-size: 50px;
+
+}
+
+#workOutDays{
+    color:darkcyan;
+    font-weight: bold;
+}

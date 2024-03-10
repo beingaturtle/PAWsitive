@@ -38,9 +38,9 @@ function initializeButtons() {
 }
 
 // timer for daily reset, runs on 8s for the sake of demo
-setInterval(() => { 
+setInterval(() => {
     localStorage.setItem("physicalCompleted", "false");
-    localStorage.setItem("mentalCompleted", "false"); 
+    localStorage.setItem("mentalCompleted", "false");
     let physicalDaily = randomizePhysicalDailies();
     let mentalDaily = randomizeMentalDailies();
     setDailies();
@@ -49,6 +49,31 @@ setInterval(() => {
 
 // cycler for cycling between physical task types
 function* cycle(...items) {
-    while(true)
-      yield* items;
-  }
+    while (true)
+        yield* items;
+}
+
+function addEventListenerToMoodBtn() {
+    const moodBtns = document.querySelectorAll("#moodDiv .moodButton");
+    moodBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            updateMoodClassName(btn.id);
+        });
+    });
+
+}
+
+function updateMoodClassName(btnID) {
+    const Btns = document.querySelectorAll("#moodDiv .moodButton");
+    Btns.forEach(btn => {
+        btn.classList.remove("moodSelected");
+        btn.firstElementChild.style.color = "white";
+    });
+    document.getElementById(btnID).classList.add("moodSelected");
+
+
+}
+
+
+// Call the function to add event listeners to dressing buttons
+addEventListenerToMoodBtn();
