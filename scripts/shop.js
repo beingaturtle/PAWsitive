@@ -67,10 +67,6 @@ async function openPullScreen(pullAmount) {
         // make clothing object
         let item = new Clothing();
 
-        // set image and message
-        pullScreenDiv.children[0].src = item.getClothingType();
-        pullScreenDiv.children[1].innerHTML = `You got a ${item.getClothingName()}`;
-
         // check if item is a coin
         if (item.getClothingName() == "coin") {
             let currency = parseInt(localStorage.getItem("currency"));
@@ -78,6 +74,12 @@ async function openPullScreen(pullAmount) {
             localStorage.setItem("currency", currency);
             populateCurrency(currency);
         }
+
+        // set image and message
+        pullScreenDiv.children[0].src = item.getClothingType();
+        pullScreenDiv.children[1].innerHTML = `You got a ${item.getClothingName()}`;
+
+  
 
         // set interact button to close if last item
         if (i == pullAmount - 1) {
